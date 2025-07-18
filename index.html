@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JV | Vision</title>
+  <title data-i18n="tituloMenu"></title>
     <!-- Materialize CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 
@@ -15,37 +15,49 @@
 
     <nav class="blue-grey darken-4">
         <div class="nav-wrapper container">
-          <a href="#" class="brand-logo">JV Vision</a>
+          <a href="#" class="brand-logo" data-i18n="titulo"></a>
           <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
            <!-- Menu para desktop -->
         <ul class="right hide-on-med-and-down">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#sobre" data-i18n="sobre"></a></li>
+            <li><a href="#portfolio" data-i18n="portfolio"></a></li>
+            <li><a href="#contato" data-i18n="contato"></a></li>
             <li>
-                <a class="dropdown-trigger" href="#!" data-target="dropdown-idiomas">🌐 Idioma<i class="material-icons right">arrow_drop_down</i></a>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown-idiomas" data-i18n="idioma"><i class="material-icons right">arrow_drop_down</i></a>
             </li>
         </ul>
         </div>
       </nav>
+      <!--Sidebar-->
       <ul class="sidenav" id="mobile-nav">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#portfolio">Portifólio</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="index.html">🇧🇷 Português</a></li>
-        <li><a href="index-en.html">🇺🇸 English</a></li>
+        <li>
+          <a href="#sobre"><i class="material-icons">person</i> <span data-i18n="sobre"></span></a>
+        </li>
+        <li>
+          <a href="#portfolio"><i class="material-icons">work</i> <span data-i18n="portfolio"></span></a>
+        </li>
+        <li>
+          <a href="#contato"><i class="material-icons">mail</i> <span data-i18n="contato"></span></a>
+        </li>
+        <li><div class="divider"></div></li>
+        <li>
+          <a href="#" id="btn-pt-side"><i class="material-icons">language</i> <span data-i18n="idiomaPt"></span></a>
+        </li>
+        <li>
+          <a href="#" id="btn-en-side"><i class="material-icons">translate</i> <span data-i18n="idiomaEn"></span></a>
+        </li>
       </ul>
      
       <ul id="dropdown-idiomas" class="dropdown-content">
-        <li><a href="index.html">🇧🇷 Português</a></li>
-        <li><a href="index-en.html">🇺🇸 English</a></li>
+        <li><a href="#" id="btn-pt" data-i18n="idiomaPt"></a></li>
+        <li><a href="#" id="btn-en" data-i18n="idiomaEn"></a></li>
       </ul>
     
   <header class="hero">
     <div class="container">
-      <h2>Editor de Vídeo & Motion Designer</h2>
-      <p>Transformando ideias em experiências visuais</p>
+      <h2 data-i18n="descricao"></h2>
+      <p data-i18n="subDescricao"></p>
     </div>
   </header>
 
@@ -53,19 +65,11 @@
     <div class="container">
       <div class="row center-align section-header">
         <div class="col s12">
-          <h2 class="section-title">Sobre</h2>
+          <h2 class="section-title" data-i18n="sessaoSobre"></h2>
           <div class="divider-custom"></div>
-                <p class="texto-justificado espacamento-paragrafo section-subtitle">
-                    Eu sou um profissional de edição de vídeo com mais de 3 anos de experiência nessa área. 
-                    Durante esse tempo, tive a oportunidade de trabalhar com muitas pessoas e posso dizer com orgulho que 99% delas ficaram satisfeitas com os meus serviços. 
-                </p>
-                <p class="texto-justificado espacamento-paragrafo section-subtitle">
-                    Tenho um grande amor pela arte da edição e estou sempre buscando aprimorar minhas habilidades e técnicas para entregar um trabalho de qualidade aos meus clientes. Se você precisa de alguém para editar seus vídeos de forma criativa e profissional, conte comigo. 
-                </p>
-                <p class="texto-justificado section-subtitle">
-                    Estou à disposição para ajudá-lo a transformar suas ideias em vídeos incríveis.
-                    É muito gratificante poder fazer parte da história de cada cliente, ajudando a transformar suas ideias e projetos em realidade através da edição de vídeos.
-                </p>
+                <p class="texto-justificado espacamento-paragrafo section-subtitle" data-i18n="texto1"></p>
+                <p class="texto-justificado espacamento-paragrafo section-subtitle" data-i18n="texto2"></p>
+                <p class="texto-justificado section-subtitle" data-i18n="texto3"></p>
             </div>
         </div>
     </div>
@@ -75,9 +79,9 @@
     <div class="container">
         <div class="row center-align section-header">
             <div class="col s12">
-                <h2 class="section-title">Portifólio</h2>
+                <h2 class="section-title" data-i18n="sessaoPortfolio"></h2>
                 <div class="divider-custom"></div>
-                <p class="section-subtitle">Projeto de edição com comentários detalhados, disponível no Behance.</p>
+                <p class="section-subtitle" data-i18n="descricaoPortfolio"></p>
             </div>
         </div>
 
@@ -89,7 +93,7 @@
                     <img src="images/canal-dark.webp" alt="Vídeo 1">
                 </div>
                 <div class="card-action center">
-                    <span>Ver no Behance</span>
+                    <span data-i18n="botaoBehance"></span>
                 </div>
                 </div>
             </a>
@@ -102,7 +106,7 @@
                 <img src="images/blogue.webp" alt="Vídeo 2">
               </div>
               <div class="card-action center">
-                <span>Ver no Behance</span>
+                <span data-i18n="botaoBehance"></span>
               </div>
             </div>
           </a>
@@ -115,7 +119,7 @@
                 <img src="images/reels.webp" alt="Vídeo 3">
               </div>
               <div class="card-action center">
-                <span>Ver no Behance</span>
+                <span data-i18n="botaoBehance"></span>
               </div>
             </div>
           </a>
@@ -128,7 +132,7 @@
                 <img src="images/gameplays.webp" alt="Vídeo 4">
               </div>
               <div class="card-action center">
-                <span>Ver no Behance</span>
+                <span data-i18n="botaoBehance"></span>
               </div>
             </div>
           </a>
@@ -141,7 +145,7 @@
                 <img src="images/propaganda.webp" alt="Vídeo 5">
               </div>
               <div class="card-action center">
-                <span>Ver no Behance</span>
+                <span data-i18n="botaoBehance"></span>
               </div>
             </div>
           </a>
@@ -154,7 +158,7 @@
                 <img src="images/vlogs.webp" alt="Vídeo 6">
               </div>
               <div class="card-action center">
-                <span>Ver no Behance</span>
+                <span data-i18n="botaoBehance"></span>
               </div>
             </div>
           </a>
@@ -167,7 +171,7 @@
                 <img src="images/shorts.webp" alt="Vídeo 7">
               </div>
               <div class="card-action center">
-                <span>Ver no Behance</span>
+                <span data-i18n="botaoBehance"></span>
               </div>
             </div>
           </a>
@@ -180,7 +184,7 @@
                 <img src="images/animacao.webp" alt="Vídeo 8">
               </div>
               <div class="card-action center">
-                <span>Ver no Behance</span>
+                <span data-i18n="botaoBehance"></span>
               </div>
             </div>
           </a>
@@ -193,9 +197,10 @@
     <div class="container">
       <div class="row center-align section-header">
         <div class="col s12">
-          <h2 class="section-title">Contato</h2>
+          <h2 class="section-title" data-i18n="sessaoContato"></h2>
           <div class="divider-custom"></div>
-          <p class="section-subtitle">Email: <a href="mailto:joaovitorkoot@gmail.com">joaovitorkoot@gmail.com</a></p>
+          <p class="section-subtitle" data-i18n="descricaoContato"></p>
+          <p class="section-subtitle" data-i18n="email"></p>
         </div>
     </div>
     </div>
@@ -203,20 +208,75 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 JV Vision. Todos os direitos reservados.</p>
+      <p data-i18n="footer"></p>
     </div>
   </footer>
 <!-- Materialize JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="lang/pt.js"></script>
+<script src="lang/en.js"></script>
     <script>
-            const sidenav = document.querySelectorAll('.sidenav');
-            M.Sidenav.init(sidenav);
+          document.addEventListener("DOMContentLoaded", () => {
+            // inicia sidenav
+            const elems = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(elems);
 
+            // inicia dropdown
             const dropdowns = document.querySelectorAll('.dropdown-trigger');
             M.Dropdown.init(dropdowns, {
-            coverTrigger: false,
-            constrainWidth: false
+              coverTrigger: false,
+              constrainWidth: false
             });
+
+            // listeners de idioma
+            const idiomaBtns = [
+              { id: 'btn-pt', lang: 'pt' },
+              { id: 'btn-en', lang: 'en' },
+              { id: 'btn-pt-side', lang: 'pt' },
+              { id: 'btn-en-side', lang: 'en' }
+            ];
+
+            idiomaBtns.forEach(btn => {
+              const el = document.getElementById(btn.id);
+              if (el) {
+                el.addEventListener("click", (e) => {
+                  e.preventDefault();
+                  traduzir(btn.lang);
+                });
+              }
+            });
+
+            // define idioma inicial
+            traduzir('pt');
+          });
+
+          const dropdowns = document.querySelectorAll('.dropdown-trigger');
+          M.Dropdown.init(dropdowns, {
+          coverTrigger: false,
+          constrainWidth: false
+          });
+
+          let currentLang = 'pt';
+
+        function traduzir(lang) {
+          const traducoes = lang === 'en' ? lang_en : lang_pt;
+
+          document.querySelectorAll("[data-i18n]").forEach(el => {
+            const chave = el.getAttribute("data-i18n");
+             if (chave === "footer") {
+                el.innerHTML = traducoes[chave];
+              } else {
+                el.textContent = traducoes[chave];
+              }
+          });
+        }
+
+        // Troca inicial (pt ou en)
+        traduzir(currentLang);
+
+        // Exemplo: Botões para trocar idioma
+        document.getElementById("btn-pt").addEventListener("click", () => traduzir('pt'));
+        document.getElementById("btn-en").addEventListener("click", () => traduzir('en'));
     </script>
 </body>
 </html>
