@@ -1,0 +1,23 @@
+const lang_pt = {
+    tituloMenu: "JV | Vision",
+    titulo: "JV Vision",
+    sobre: "Sobre",
+    portfolio: "Portfólio",
+    contato: "Contato",
+    idioma: "🌐 Idioma",
+    idiomaPt: "🇧🇷 Português",
+    idiomaEn: "🇺🇸 English",
+    descricao: "Editor de Vídeo & Motion Designer",
+    subDescricao: "Transformando ideias em experiências visuais",
+    sessaoSobre: "Sobre",
+    texto1: "Eu sou um profissional de edição de vídeo com mais de 3 anos de experiência nessa área. Durante esse tempo, tive a oportunidade de trabalhar com muitas pessoas e posso dizer com orgulho que 99% delas ficaram satisfeitas com os meus serviços. ",
+    texto2: "Tenho um grande amor pela arte da edição e estou sempre buscando aprimorar minhas habilidades e técnicas para entregar um trabalho de qualidade aos meus clientes. Se você precisa de alguém para editar seus vídeos de forma criativa e profissional, conte comigo.",
+    texto3: "Estou à disposição para ajudá-lo a transformar suas ideias em vídeos incríveis. É muito gratificante poder fazer parte da história de cada cliente, ajudando a transformar suas ideias e projetos em realidade através da edição de vídeos.",
+    sessaoPortfolio: "Portfólio",
+    descricaoPortfolio: "Projeto de edição com comentários detalhados, disponível no Behance.",
+    botaoBehance: "Ver no Behance",
+    sessaoContato: "Contato",
+    descricaoContato: "Entre em contato para discutir seu projeto ou solicitar um orçamento.",
+    email: "Email: joaovitorkoot@gmail.com",
+    footer:"&copy; 2025 JV Vision. Todos os direitos reservados."
+};
