@@ -4,25 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JV | Vision</title>
+    <!-- Materialize CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <nav>
-    <div class="container">
-      <h1 class="logo">JV Vision</h1>
-      <ul class="menu">
+    <nav class="blue-grey darken-4">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo">JV Vision</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+           <!-- Menu para desktop -->
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown-idiomas">🌐 Idioma<i class="material-icons right">arrow_drop_down</i></a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-nav">
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#portfolio">Portifólio</a></li>
         <li><a href="#contato">Contato</a></li>
+        <li><a href="index.html">🇧🇷 Português</a></li>
+        <li><a href="index-en.html">🇺🇸 English</a></li>
       </ul>
-      <div class="language-switcher">
-        <a href="index.html">🇧🇷 Português</a> |
-        <a href="index-en.html">🇺🇸 English</a>
-      </div>
-    </div>
-  </nav>
-    <img src="images/image-2.jpg" alt="Imagem de Fundo" class="background-image">
+     
+      <ul id="dropdown-idiomas" class="dropdown-content">
+        <li><a href="index.html">🇧🇷 Português</a></li>
+        <li><a href="index-en.html">🇺🇸 English</a></li>
+      </ul>
+    
   <header class="hero">
     <div class="container">
       <h2>Editor de Vídeo & Motion Designer</h2>
@@ -32,67 +51,153 @@
 
   <section id="sobre">
     <div class="container">
-      <h2>Sobre</h2>
-      <p class="texto-justificado espacamento-paragrafo">
-        Eu sou um profissional de edição de vídeo com mais de 3 anos de experiência nessa área. 
-        Durante esse tempo, tive a oportunidade de trabalhar com muitas pessoas e posso dizer com orgulho que 99% delas ficaram satisfeitas com os meus serviços. 
-     </p>
-     <p class="texto-justificado espacamento-paragrafo">
-         Tenho um grande amor pela arte da edição e estou sempre buscando aprimorar minhas habilidades e técnicas para entregar um trabalho de qualidade aos meus clientes. Se você precisa de alguém para editar seus vídeos de forma criativa e profissional, conte comigo. 
-      </p>
-      <p class="texto-justificado">
-         Estou à disposição para ajudá-lo a transformar suas ideias em vídeos incríveis.
-         É muito gratificante poder fazer parte da história de cada cliente, ajudando a transformar suas ideias e projetos em realidade através da edição de vídeos.
-      </p>
-    </div>
-  </section>
-
-  <section id="portfolio">
-    <div class="container">
-      <h2>Portfólio</h2>
-      <p>Projeto de edição com comentários detalhados, disponível no Behance.</p>
-        <div class="grid">
-            <div class="card">
-                <img src="images/canal-dark.webp" alt="Vídeo 1">
-                <a class="card-link" href="https://www.behance.net/gallery/162068767/Edicao-de-video-comentado" target="_blank" rel="noopener noreferrer" style="color: white;">Ver no Behance</a>
-            </div>
-            <div class="card">
-                <img src="images/blogue.webp" alt="Vídeo 2">
-                <a class="btn" href="https://www.behance.net/gallery/229382609/Estilo-Apresentador" target="_blank" rel="noopener noreferrer" style="color: white;">Ver no Behance</a>
-            </div>
-            <div class="card">
-                <img src="images/reels.webp" alt="Vídeo 3">
-                <a class="btn" href="https://www.behance.net/gallery/162022169/Edicao-para-Instagram" target="_blank" rel="noopener noreferrer" style="color: white;">Ver no Behance</a>
-            </div>
-            <div class="card">
-                <img src="images/gameplays.webp" alt="Vídeo 4">
-                <a class="btn" href="https://www.behance.net/gallery/161972245/Edicao-para-JOGOS" target="_blank" rel="noopener noreferrer" style="color: white;">Ver no Behance</a>
-            </div>
-            <div class="card">
-                <img src="images/propaganda.webp" alt="Vídeo 5">
-                <a class="btn" href="https://www.behance.net/gallery/229381105/Propaganda" target="_blank" rel="noopener noreferrer" style="color: white;">Ver no Behance</a>
-            </div>
-            <div class="card">
-                <img src="images/vlogs.webp" alt="Vídeo 6">
-                <a class="btn" href="https://www.behance.net/gallery/161978587/Edicao-para-viagens" target="_blank" rel="noopener noreferrer" style="color: white;">Ver no Behance</a>
-            </div>
-            <div class="card">
-                <img src="images/shorts.webp" alt="Vídeo 7">
-                <a class="btn" href="https://www.behance.net/gallery/161983189/Edicao-para-YouTube" target="_blank" rel="noopener noreferrer" style="color: white;">Ver no Behance</a>
-            </div>
-            <div class="card">
-                <img src="images/animacao.webp" alt="Vídeo 8">
-                <a class="btn" href="https://www.behance.net/gallery/160757287/Capa-de-YouTube" target="_blank" rel="noopener noreferrer" style="color: white;">Ver no Behance</a>
+      <div class="row center-align section-header">
+        <div class="col s12">
+          <h2 class="section-title">Sobre</h2>
+          <div class="divider-custom"></div>
+                <p class="texto-justificado espacamento-paragrafo section-subtitle">
+                    Eu sou um profissional de edição de vídeo com mais de 3 anos de experiência nessa área. 
+                    Durante esse tempo, tive a oportunidade de trabalhar com muitas pessoas e posso dizer com orgulho que 99% delas ficaram satisfeitas com os meus serviços. 
+                </p>
+                <p class="texto-justificado espacamento-paragrafo section-subtitle">
+                    Tenho um grande amor pela arte da edição e estou sempre buscando aprimorar minhas habilidades e técnicas para entregar um trabalho de qualidade aos meus clientes. Se você precisa de alguém para editar seus vídeos de forma criativa e profissional, conte comigo. 
+                </p>
+                <p class="texto-justificado section-subtitle">
+                    Estou à disposição para ajudá-lo a transformar suas ideias em vídeos incríveis.
+                    É muito gratificante poder fazer parte da história de cada cliente, ajudando a transformar suas ideias e projetos em realidade através da edição de vídeos.
+                </p>
             </div>
         </div>
     </div>
   </section>
 
+  <section id="portfolio">
+    <div class="container">
+        <div class="row center-align section-header">
+            <div class="col s12">
+                <h2 class="section-title">Portifólio</h2>
+                <div class="divider-custom"></div>
+                <p class="section-subtitle">Projeto de edição com comentários detalhados, disponível no Behance.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6 l3">
+            <a href="https://www.behance.net/gallery/162068767/Edicao-de-video-comentado" target="_blank">
+                <div class="card">
+                <div class="card-image">
+                    <img src="images/canal-dark.webp" alt="Vídeo 1">
+                </div>
+                <div class="card-action center">
+                    <span>Ver no Behance</span>
+                </div>
+                </div>
+            </a>
+        </div>
+  
+        <div class="col s12 m6 l3">
+          <a href="https://www.behance.net/gallery/229382609/Estilo-Apresentador" target="_blank">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/blogue.webp" alt="Vídeo 2">
+              </div>
+              <div class="card-action center">
+                <span>Ver no Behance</span>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="col s12 m6 l3">
+          <a href="https://www.behance.net/gallery/162022169/Edicao-para-Instagram" target="_blank">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/reels.webp" alt="Vídeo 3">
+              </div>
+              <div class="card-action center">
+                <span>Ver no Behance</span>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="col s12 m6 l3">
+          <a href="https://www.behance.net/gallery/161972245/Edicao-para-JOGOS" target="_blank">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/gameplays.webp" alt="Vídeo 4">
+              </div>
+              <div class="card-action center">
+                <span>Ver no Behance</span>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="col s12 m6 l3">
+          <a href="https://www.behance.net/gallery/229381105/Propaganda" target="_blank">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/propaganda.webp" alt="Vídeo 5">
+              </div>
+              <div class="card-action center">
+                <span>Ver no Behance</span>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="col s12 m6 l3">
+          <a href="https://www.behance.net/gallery/161978587/Edicao-para-viagens" target="_blank">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/vlogs.webp" alt="Vídeo 6">
+              </div>
+              <div class="card-action center">
+                <span>Ver no Behance</span>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="col s12 m6 l3">
+          <a href="https://www.behance.net/gallery/161983189/Edicao-para-YouTube" target="_blank">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/shorts.webp" alt="Vídeo 7">
+              </div>
+              <div class="card-action center">
+                <span>Ver no Behance</span>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="col s12 m6 l3">
+          <a href="https://www.behance.net/gallery/160757287/Capa-de-YouTube" target="_blank">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/animacao.webp" alt="Vídeo 8">
+              </div>
+              <div class="card-action center">
+                <span>Ver no Behance</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="contato">
     <div class="container">
-      <h2>Contato</h2>
-      <p>Email: <a href="mailto:joaovitorkoot@gmail.com">joaovitorkoot@gmail.com</a></p>
-      <p>Instagram: <a href="#" target="_blank">???</a></p>
+      <div class="row center-align section-header">
+        <div class="col s12">
+          <h2 class="section-title">Contato</h2>
+          <div class="divider-custom"></div>
+          <p class="section-subtitle">Email: <a href="mailto:joaovitorkoot@gmail.com">joaovitorkoot@gmail.com</a></p>
+        </div>
+    </div>
     </div>
   </section>
 
@@ -101,6 +206,17 @@
       <p>&copy; 2025 JV Vision. Todos os direitos reservados.</p>
     </div>
   </footer>
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+            const sidenav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenav);
 
+            const dropdowns = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(dropdowns, {
+            coverTrigger: false,
+            constrainWidth: false
+            });
+    </script>
 </body>
 </html>
