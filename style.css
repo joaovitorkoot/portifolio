@@ -158,3 +158,29 @@
     font-size: 1.2rem;
     color: #333333;
   }
+
+   .sidenav {
+    background-color: var(--color-bg);
+  }
+
+  .sidenav a {
+    font-size: 16px;
+    padding: 12px 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  .sidenav a i.material-icons {
+    margin-right: 16px;
+    color: #fdd835; /* amarelo suave */
+  }
+
+  .sidenav a:hover {
+    background-color: #333;
+  }
+
+  .sidenav .divider {
+    background-color: #555;
+    margin: 8px 0;
+  }
